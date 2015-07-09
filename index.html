@@ -5,9 +5,10 @@
         <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
     </head>
     <body>
-        <button onclick="$('.flash_1').css('display','')">查看</button>
+        <button onclick="document.getElementById('f').style('display', '')">查看</button>        
+        <button onclick="alert('ok')">pop</button>
         <div class="flash_1"  style="display:none;" >
-            <div class="flash">
+            <div id="f">
                 <object width="560" height="490" type="application/x-shockwave-flash" data="http://finance.sina.com.cn/flash/cn.swf?" id="flash" style="visibility: visible;"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><param name="wmode" value="transparent"><param name="flashvars" value="symbol=sh000001&amp;code=iddg64geja6fea4eafh9jbj7c5j4ie5d&amp;s=3"></object>
             </div>
         </div>
